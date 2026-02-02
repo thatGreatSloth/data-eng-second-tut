@@ -60,6 +60,9 @@ Separation of concerns
             auth and author [token, ssh, keys, password, vpn, ip whitelisting]
 
 
+            Bulk insert - operation loads data in one go to db. 
+
+
  Data Ingestion -> coding
 
  Data completedness and schema checks -> validating
