@@ -31,3 +31,37 @@ Data Architect - exactly like building a house, design house buleprint
 
 Separation of concerns
  break complex system into small simple part, each component is responsible for a function as seen above, each layer has own unique task -  important in data Architecture. 
+
+ Always choose a naming convention before starting any work in relation to naming etc. 
+
+
+    1. Build bronze layer. 
+
+ Interview source system experts to understand the data sources. Helps design correct script -> Analysing 
+    
+            Understand the story behind the data,
+             who owns the data, 
+             which process it supports,
+             system and data documentation
+             data model and catalog
+
+             understand business context 
+
+            Architecture and tech stack
+            How is data stored? on premise or cloud
+            what are intgeration capabilities? api, kafka, file extract, 
+
+            Extract & load
+            Increment v Full load
+            Data scope & historical needs
+            expected size of extracts
+            any data volume limitations
+            how to avoid impacting source systems performance
+            auth and author [token, ssh, keys, password, vpn, ip whitelisting]
+
+
+ Data Ingestion -> coding
+
+ Data completedness and schema checks -> validating
+
+ Doc and Verisioning
