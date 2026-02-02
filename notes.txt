@@ -1,0 +1,33 @@
+Data Architect - exactly like building a house, design house buleprint
+
+                design how data will flow, integrate and be accessed. be scalable
+
+                step 1: choose type of Data Architecture
+                    1. data warehouse - structured data
+                    2. data lake - flexible, semi,      unstructure along with structured
+                    3. data lakehouse - mix of above. get flexibility of having any type of data and u can still organize and structure data
+                    4. Data mesh - decentralized dms. 
+
+                            1. Create a DWH
+                        Inmon - sources -> stage -> enterprise dwh (3NF) -> data marts (design data for consumption) -> report
+                        Stage
+
+                        Kimball - stage -> data marts -> report - save time
+
+                        Data vault - stage -> raw vault -> business vault -> data marts -> report
+
+                        Medallion Architecture - source -> bronze [raw, unprocessed data, traceability and debugging] - Table - Full load[truncate and insert] - no transformation of data - no change in data model -
+                         data engineers 
+
+                         -> silver [clean, standardized data, prepare for analysis] Table - Full load - 
+                         data cleaning, standardization, normalization, dervied columns, enrichment -  no change in data model - 
+                         data analysis, engineers
+
+                         -> gold   [business ready data, for analysis] - Views - none - 
+                         data integration, aggregation, business rules and logic - 
+                         start schema, aggregated object, flat tables (data models) - 
+                         data analysist
+                         business users
+
+Separation of concerns
+ break complex system into small simple part, each component is responsible for a function as seen above, each layer has own unique task -  important in data Architecture. 
