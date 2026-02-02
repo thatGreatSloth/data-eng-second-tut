@@ -62,6 +62,8 @@ Separation of concerns
 
             Bulk insert - operation loads data in one go to db. 
 
+            keep note of start and end times for debugging / find bottlenecks in ETL process. 
+
 
  Data Ingestion -> coding
 
